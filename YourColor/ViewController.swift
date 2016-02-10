@@ -43,7 +43,8 @@ class ViewController: UIViewController {
                     value = davidColor[randomIndex]!
                 }
                 print("\(value.CGColor)")
-                self.view.backgroundColor = value
+//                self.view.backgroundColor = value
+                UIView.animateWithDuration(1, animations: { () -> Void in self.view.backgroundColor = value})
                 nameValue.text = value.description
         //self.view.backgroundColor = UIColor.blackColor()
             }
